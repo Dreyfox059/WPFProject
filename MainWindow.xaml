@@ -12,11 +12,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Source="logo.png"/>
+        <Image HorizontalAlignment="Left" Source="Resource/logo.png"/>
         <TextBlock HorizontalAlignment="Center" FontSize="30" Text="Header" VerticalAlignment="Center"/>
         <Grid Background="#bae3e8" Panel.ZIndex="-2"></Grid>
         <Grid Grid.Row="2" Background="#444c93"></Grid>
-        <Frame Grid.Row="1" Name="MainFrame"></Frame>
-        <Button Content="Back" Name="BtnBack" Width="175" Height="30" HorizontalAlignment="Right" Margin="5" Click="BtnBack_Click"></Button>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"></Frame>
+        <Button Content="Back" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
     </Grid>
 </Window>
